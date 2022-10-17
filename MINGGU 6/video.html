@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<style>
+
+    body 
+    {
+        background-color: crimson;
+        color:gold;
+    }
+
+    a
+    {
+        color: blue;
+    }
+
+</style>
+<body>
+    <nav> 
+        <a href="home.html">Home</a> | 
+        <a href="cv-contoh.pdf">Download CV</a> | 
+        <a href="kontak.html">Contact</a> | 
+		<a href="tentang.html">About me</a> |
+		<a href="video.html">Video</a> |
+    </nav> 
+    <p>This is an example of my video and my youtube content</p>
+            <P>
+                <button onclick="playVid()" type="button">Play Video</button>
+                <button onclick="pauseVid()" type="button">Pause Video</button>
+                <button onclick="controlsEnable()" type="button">Controls ON</button>
+                <button onclick="controlsDisable()" type="button">Controls OFF</button>
+                <button onclick="getVolume()" type="button">What is the volume?</button>
+                <button onclick="setHalfVolume()" type="button">Set volume to 0.2</button>
+                <button onclick="setFullVolume()" type="button">Set volume to 1.0</button>
+            </P>
+
+    <video id="myVideo" width="320" height="420" controls>
+        <source src="evoreels.mp4" type="video/mp4">
+        video file not support
+
+    </video>
+    <br>
+        <p>Cycling and Hiking GTA V Online Indonesia</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tWYH80HKe-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        <p>Cinematic Carmeet Video</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Dz7oe_HGZMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><b><i>JANGAN LUPA MAMPIR DAN SUBSCRIBE CHANNEL SAYA ==> <a href="https://www.youtube.com/c/TheAXELORD"> www.youtube.com/c/TheAXELORD</a></i></b></p>
+    </body>
+    <script>
+    var vid = document.getElementById("myVideo");
+
+    function playVid() {
+    vid.play();
+    vid.loop = true;
+    }
+
+    function pauseVid() {
+    vid.pause();
+    } 
+
+    function controlsEnable() { 
+    vid.controls = true;
+    vid.load();
+    }
+
+    function controlsDisable() { 
+    vid.controls = false;
+    vid.load();
+    }
+
+    function getVolume() { 
+    alert(vid.volume);
+    } 
+  
+    function setHalfVolume() { 
+    vid.volume = 0.2;
+    } 
+    
+    function setFullVolume() { 
+    vid.volume = 1.0;
+    } 
+
+    </script>
+    <hr>
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2022 lsr_kdw.</p>
+    </footer>
+</body>
+</html>
